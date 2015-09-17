@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>Slider</title>
+	<style>
+
+		body {
+			padding: 60px 100px;
+		}
+
+		.slider {
+			border: 1px solid #aaa;
+			color: #222;
+			width: 500px;
+			height: 0.8em;
+			position: relative;
+			text-align: left;
+			font-size: 1.1em;
+		}
+
+		.slider-handle {
+			position: absolute;
+			height: 1.6em;
+			width: 1.2em;
+			z-index: 2;
+			cursor: default;
+			border: 1px solid #d3d3d3;
+			color: #555;
+			background-color: #dedede;
+			margin-left: -0.5em;
+			top: -0.3em;
+		}
+	</style>
+</head>
+<body>
+
+
+	<div class="slider" >
+		<button class="slider-handle" type="button"></button>
+	</div>
+
+	<script src="slider.js"></script>
+</body>
+</html>

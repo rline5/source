@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>Thumbnail</title>
+	<style>
+		* { margin:0; padding:0; }
+		body { padding: 15px; }
+		#gallery { position:relative; width:100%; height:595px; }
+		#thumbnail { position:relative; width:100%; height:95px; margin-top:30px;}
+		#thumbnail .container { overflow: hidden; position:relative; height:95px;}
+		#thumbnail .container ul { position: absolute;}
+		#thumbnail .container .thumb { float: left; width:120px; height:95px; margin-left:8px; list-style: none; }
+		#thumbnail .container .thumb:first-child { margin-left: 0; }
+	</style>
+</head>
+<body>
+	<div id="gallery">
+		<!--<div id="image">
+			<p style="display:block;"><img src="slideImg/0.jpg" alt="" /></p>
+			<p><img src="slideImg/1.jpg" alt="" /></p>
+			<p><img src="slideImg/2.jpg" alt="" /></p>
+			<p><img src="slideImg/3.jpg" alt="" /></p>
+			<p><img src="slideImg/4.jpg" alt="" /></p>
+			<p><img src="slideImg/5.jpg" alt="" /></p>
+			<p><img src="slideImg/6.jpg" alt="" /></p>
+			<p><img src="slideImg/7.jpg" alt="" /></p>
+			<p><img src="slideImg/8.jpg" alt="" /></p>
+			<p><img src="slideImg/9.jpg" alt="" /></p>
+			<p><img src="slideImg/10.jpg" alt="" /></p>
+			<p><img src="slideImg/11.jpg" alt="" /></p>
+			<p><img src="slideImg/12.jpg" alt="" /></p>
+			<p><img src="slideImg/13.jpg" alt="" /></p>
+			<p><img src="slideImg/14.jpg" alt="" /></p>
+			<p><img src="slideImg/15.jpg" alt="" /></p>
+			<p><img src="slideImg/16.jpg" alt="" /></p>
+			<p><img src="slideImg/17.jpg" alt="" /></p>
+		</div>-->
+		<div id="thumbnail">
+			<!--<div class="left">
+				<span><img src="slideImg/btn_left.gif" alt="이전" /></span>
+			</div>-->
+
+			<div class="container">
+				<ul>
+					<li class="thumb"><img draggable="false" src="slideImg/thumb0.jpg" alt="" /></li>
+					<li class="thumb"><img draggable="false" src="slideImg/thumb1.jpg" alt="" /></li>
+					<li class="thumb"><img draggable="false" src="slideImg/thumb2.jpg" alt="" /></li>
+					<li class="thumb"><img draggable="false" src="slideImg/thumb3.jpg" alt="" /></li>
+					<li class="thumb"><img draggable="false" src="slideImg/thumb4.jpg" alt="" /></li>
+					<li class="thumb"><img draggable="false" src="slideImg/thumb5.jpg" alt="" /></li>
+					<li class="thumb"><img draggable="false" src="slideImg/thumb6.jpg" alt="" /></li>
+					<li class="thumb"><img draggable="false" src="slideImg/thumb7.jpg" alt="" /></li>
+					<li class="thumb"><img draggable="false" src="slideImg/thumb8.jpg" alt="" /></li>
+					<li class="thumb"><img draggable="false" src="slideImg/thumb9.jpg" alt="" /></li>
+					<li class="thumb"><img draggable="false" src="slideImg/thumb10.jpg" alt="" /></li>
+					<li class="thumb"><img draggable="false" src="slideImg/thumb11.jpg" alt="" /></li>
+					<li class="thumb"><img draggable="false" src="slideImg/thumb12.jpg" alt="" /></li>
+					<li class="thumb"><img draggable="false" src="slideImg/thumb13.jpg" alt="" /></li>
+					<li class="thumb"><img draggable="false" src="slideImg/thumb14.jpg" alt="" /></li>
+					<li class="thumb"><img draggable="false" src="slideImg/thumb15.jpg" alt="" /></li>
+					<li class="thumb"><img draggable="false" src="slideImg/thumb16.jpg" alt="" /></li>
+					<li class="thumb"><img draggable="false" src="slideImg/thumb17.jpg" alt="" /></li>
+				</ul>
+			</div>
+
+			<!--<div class="right">
+				<span><img src="slideImg/btn_right.gif" alt="다음" /></span>
+			</div>-->
+		</div>
+	</div>
+
+		<script src="js/jquery-1.9.1.min.js"></script>
+		<script src="js/jquery-ui-1.10.3.custom.min.js"></script>
+		<script src="js/thumbnail.js"></script>
+</body>
+</html>

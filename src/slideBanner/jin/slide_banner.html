@@ -1,0 +1,69 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko" lang="ko">
+<head>
+<title>slide_banner</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8;" />
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.easing.1.3.min.js"></script>
+<style>
+/* common */
+html{width:100%;height:100%;overflow-y:scroll}
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0px;padding:0px;font:inherit;vertical-align:baseline;}
+body{font-size:12px;font-family:Dotum,Arial;color:#74767a;line-height: 120%;}
+a,a:link,a:visited{color:#74767a;text-decoration:none}
+ul,ol{list-style:none}
+table,fieldset,th,td,img{border:none}
+img,input,select{vertical-align:middle}
+
+#wrap {}
+.banner-view-container { position:relative;width:100%; min-width:1000px; margin:0 auto;overflow:hidden;height:500px; background:#8c908c;}
+.banner-view-container ul { position:relative; float:left; width:100%; height:500px;}
+.banner-view-container li { position:absolute; width:100%;height:500px;}
+.banner-view-container li a {display:block;text-indent:-9999px}
+
+.banner-btn-container:after {content:""; display:block; clear:both;}
+.banner-btn-container li{ background:url("img/btnVisual.png") 0 -16px no-repeat; width:14px; height:15px; float:left; position:relative; left:50%; top:-135px; overflow:hidden; margin:0 5px; cursor:pointer;}
+.banner-btn-container li.on { background-position:0 0;}
+.banner-btn-container li a {display:block;text-indent:-9999px}
+</style>
+
+</head>
+
+<body>
+	<div id="banner1">
+		<div class="banner-view-container">
+			<ul>
+				<li style="left: 0; background: url('img/0.png') 50% 0 no-repeat;"><a href="#">배너이미지 1</a></li>
+				<li style="left: 100%; background: url('img/1.png') 50% 0 no-repeat;"><a href="#">배너이미지 2</a></li>
+				<li style="left: 200%; background: url('img/2.png') 50% 0 no-repeat;"><a href="#">배너이미지 3</a></li>
+			</ul>
+		</div>
+		<ul class="banner-btn-container">
+			<li class="on"><a href="#">배너1</a></li>
+			<li><a href="#">배너2</a></li>
+			<li><a href="#">배너3</a></li>
+		</ul>
+	</div>
+
+	<div id="banner2">
+		<div class="banner-view-container">
+			<ul>
+				<li style="left: 0; background: url('img/0.png') 50% 0 no-repeat;"><a href="#">배너이미지 1</a></li>
+				<li style="left: 100%; background: url('img/1.png') 50% 0 no-repeat;"><a href="#">배너이미지 2</a></li>
+				<li style="left: 200%; background: url('img/2.png') 50% 0 no-repeat;"><a href="#">배너이미지 3</a></li>
+			</ul>
+		</div>
+		<ul class="banner-btn-container">
+			<li class="on"><a href="#">배너1</a></li>
+			<li><a href="#">배너2</a></li>
+			<li><a href="#">배너3</a></li>
+		</ul>
+	</div>
+
+
+
+	<script type="text/javascript" src="js/slide_banner.js"></script>
+</body>
+</html>
